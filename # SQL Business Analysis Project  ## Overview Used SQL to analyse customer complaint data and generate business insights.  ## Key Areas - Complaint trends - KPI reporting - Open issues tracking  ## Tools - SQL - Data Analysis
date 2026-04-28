@@ -1,0 +1,10 @@
+SELECT complaint_type, COUNT(*) 
+FROM customer_data
+GROUP BY complaint_type;
+
+SELECT AVG(resolution_time) 
+FROM customer_data;
+
+SELECT * 
+FROM customer_data
+WHERE status = 'Open';
