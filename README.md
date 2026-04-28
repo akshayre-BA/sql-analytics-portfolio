@@ -1,13 +1,15 @@
 # SQL Business Analysis Project
 
 ## Overview
-Used SQL to analyse customer complaint data and generate business insights.
+This project demonstrates the use of SQL to analyse customer complaint data and generate actionable business insights.
 
-## Key Areas
-- Complaint trends
-- KPI reporting
-- Open issues tracking
+## Key Analysis
+- Complaint trends by category
+- Average resolution time
+- Identification of open issues
 
-## Tools
-- SQL
-- Data Analysis
+## Sample Queries
+```sql
+SELECT complaint_type, COUNT(*) 
+FROM customer_data
+GROUP BY complaint_type;
